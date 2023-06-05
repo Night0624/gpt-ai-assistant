@@ -64,6 +64,7 @@ const createTextCompletion = ({
   frequencyPenalty = config.OPENAI_COMPLETION_FREQUENCY_PENALTY,
   presencePenalty = config.OPENAI_COMPLETION_PRESENCE_PENALTY,
   stop = [
+    ' END',
     ` ${ROLE_AI}:`,
     ` ${ROLE_HUMAN}:`,
   ],
